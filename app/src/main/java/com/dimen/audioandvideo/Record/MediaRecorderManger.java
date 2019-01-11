@@ -17,7 +17,6 @@ import java.io.IOException;
 
 public class MediaRecorderManger {
     private boolean isRecord = false;
-
     private MediaRecorder mMediaRecorder;
     private MediaRecorderManger(){
     }
