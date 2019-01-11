@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dimen.audioandvideo">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -18,7 +22,8 @@
         </activity>
         <activity android:name=".picture.ImageViewActivity" />
         <activity android:name=".picture.SurfaceViewActivity" />
-        <activity android:name=".picture.CustomImageActivity"></activity>
+        <activity android:name=".picture.CustomImageActivity" />
+        <activity android:name=".audio.AudioActivity"></activity>
     </application>
 
 </manifest>

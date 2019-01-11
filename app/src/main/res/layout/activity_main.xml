@@ -37,5 +37,13 @@
             android:textAllCaps="false" />
     </LinearLayout>
 
+        <Button
+            android:onClick="audio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="音频3种操作方式"
+            android:textAllCaps="false" />
+
+
 
 </LinearLayout>
