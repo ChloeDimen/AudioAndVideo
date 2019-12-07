@@ -1,49 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+
     tools:context="com.dimen.audioandvideo.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="imageView"
+                android:text="ImageView显示"
+                android:textAllCaps="false" />
+
+            <Button
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="surfaceView"
+                android:text="SurfaceView显示"
+                android:textAllCaps="false" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="customView"
+                android:text="自定义View显示"
+                android:textAllCaps="false" />
+        </LinearLayout>
 
         <Button
-            android:onClick="imageView"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="ImageView显示"
-            android:textAllCaps="false" />
-
-        <Button
-            android:onClick="surfaceView"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="SurfaceView显示"
-            android:textAllCaps="false" />
-
-        <Button
-            android:onClick="customView"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="自定义View显示"
-            android:textAllCaps="false" />
-    </LinearLayout>
-
-        <Button
-            android:onClick="audio"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="audio"
             android:text="音频3种操作方式"
             android:textAllCaps="false" />
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="camera"
+            android:text="Camera显示方式"
+            android:textAllCaps="false" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Media"
+            android:text="MediaExtractor和MediaMuxer"
+            android:textAllCaps="false" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="glSurfaceView"
+            android:text="GlSurfaceView"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
 
 
-</LinearLayout>
+</ScrollView>
